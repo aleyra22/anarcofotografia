@@ -38,9 +38,8 @@ main {
 }
 
 .portada img {
-    width: 100%;        /* ocupa todo el ancho disponible */
-    max-width: none;    /* evita que se limite el tamaño */
-    height: auto;
+    width: auto;
+    height: 95vh; /* ← agranda la imagen un poquito */
     object-fit: cover;
 }
 
