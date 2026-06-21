@@ -39,7 +39,7 @@ main {
 
 .portada img {
     width: auto;
-    height: 95vh; /* ← agranda la imagen un poquito */
+    height: 60vh; /* ← agranda la imagen un poquito */
     object-fit: cover;
 }
 
