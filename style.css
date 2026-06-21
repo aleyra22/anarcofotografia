@@ -30,13 +30,18 @@ main {
   margin: auto;
   text-align: center;
 }
-
-/* SOLO ESTO controla la imagen */
 .portada {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* mantiene la imagen a la izquierda */
+    align-items: center;         /* centrada verticalmente */
     height: 100vh;
+}
+
+.portada img {
+    width: 100%;        /* ocupa todo el ancho disponible */
+    max-width: none;    /* evita que se limite el tamaño */
+    height: auto;
+    object-fit: cover;
 }
 
 .portada img {
