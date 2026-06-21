@@ -32,13 +32,14 @@ main {
 }
 .portada {
     display: flex;
-    justify-content: flex-start; /* mueve la imagen al lado izquierdo */
-    align-items: center;         /* mantiene la imagen centrada verticalmente */
+    justify-content: flex-start; /* mantiene la imagen a la izquierda */
+    align-items: center;         /* centrada verticalmente */
     height: 100vh;
 }
 
 .portada img {
-    max-width: 100%;
+    width: 100%;        /* ocupa todo el ancho disponible */
+    max-width: none;    /* evita que se limite el tamaño */
     height: auto;
     object-fit: cover;
 }
