@@ -25,11 +25,12 @@ hr {
   border-top: 1px solid #aaa;
 }
 
-main {
+main:not(.portada) {
   max-width: 800px;
   margin: auto;
   text-align: center;
 }
+
 main:not(.portada) {
   max-width: 800px;
   margin: auto;
