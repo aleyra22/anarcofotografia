@@ -45,7 +45,9 @@ main:not(.portada) {
 }
 
 .portada img {
-    height: 90vh;   /* GRANDE */
     width: auto;
+    height: 90vh;
     object-fit: cover;
+    margin-left: -40px; /* mueve la imagen un poquito a la izquierda */
 }
+
