@@ -48,6 +48,6 @@ main:not(.portada) {
     width: auto;
     height: 90vh;
     object-fit: cover;
-    margin-left: -80px; /* mueve la imagen un poquito a la izquierda */
+    margin-left: -1200px; /* mueve la imagen un poquito a la izquierda */
 }
 
