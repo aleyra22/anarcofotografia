@@ -32,9 +32,9 @@ main {
 }
 .portada {
     display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
-    height: 100vh;           /* ocupa toda la altura de la ventana */
+    justify-content: flex-start; /* mueve la imagen al lado izquierdo */
+    align-items: center;         /* mantiene la imagen centrada verticalmente */
+    height: 100vh;
 }
 
 .portada img {
