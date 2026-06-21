@@ -1,3 +1,32 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Courier New', monospace;
+  background-color: #fdfdfd;
+  color: #111;
+  margin: 40px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
