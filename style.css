@@ -30,9 +30,21 @@ main {
   margin: auto;
   text-align: center;
 }
-.portada img {
-    width: 100%;
+main:not(.portada) {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.portada {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     height: 100vh;
+}
+
+.portada img {
+    height: 90vh;   /* GRANDE */
+    width: auto;
     object-fit: cover;
-    display: block;
 }
