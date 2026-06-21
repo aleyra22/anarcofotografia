@@ -25,23 +25,11 @@ hr {
   border-top: 1px solid #aaa;
 }
 
-main:not(.portada) {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
 .portada {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    width: 100%; /* ← ESTA LÍNEA ARREGLA TODO */
-}
-
-.portada img {
-    width: auto;
-    height: 90vh;
-    object-fit: cover;
-    margin-left: -40px;
+    width: 100%;
+    margin: 0; /* ← CLAVE */
 }
