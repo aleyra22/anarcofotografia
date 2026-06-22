@@ -31,25 +31,26 @@ main {
   text-align: center;
 }
 
+/* 🔥 PORTADA — AJUSTADA SIN ROMPER NADA */
 .portada {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* ← imagen arriba, texto abajo */
-  align-items: flex-start;        /* ← alinear a la izquierda */
-  height: 85vh;                   /* ajustable */
+  justify-content: center;   /* centramos solo la imagen */
+  align-items: center;
+  height: 80vh;              /* antes 85vh — evita scroll */
   width: 100%;
-  padding: 0 20px;                /* margen lateral suave */
+  padding: 0 20px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-
 .portada img {
-  height: 70vh;
+  height: 65vh;              /* antes 70vh — evita scroll */
   width: auto;
   object-fit: contain;
-  align-self: center; /* ← centrada arriba */
+  align-self: center;
 }
+
+/* 🔥 TEXTO ARRIBA CENTRADO */
 .texto-arriba {
   position: absolute;
   top: 20px;
@@ -59,161 +60,8 @@ main {
   color: #111;
 }
 
-
-.descripcion-izq {
-  font-size: 0.9rem;
-  max-width: 600px;
-  line-height: 1.4;
-  margin-bottom: 10px; /* ← queda abajo */
-}
+/* 🔥 PIE DE PÁGINA ABAJO IZQUIERDA */
 .pie-index {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  text-align: left;
-  font-family: 'Courier New', monospace;
-  color: #111;
-}
-
-.pie-index h1 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.pie-index p {
-  font-size: 0.9rem;
-  margin: 2px 0;
-}
-
-
-/* GALERÍA MASONRY - DESORDENADA PERO ORGANIZADA */
-.galeria {
-  column-count: 4;
-  column-gap: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.galeria-item {
-  break-inside: avoid;
-  margin-bottom: 20px;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.galeria-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.galeria-item img {
-  width: 100%;
-  display: block;
-  transition: filter 0.3s;
-}
-
-.galeria-item:hover img {
-  filter: brightness(0.9);
-}
-
-/* MODAL LIGHTBOX - AMPLIAR FOTO */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.95);
-  animation: fadeIn 0.3s;
-}
-
-.lightbox.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lightbox-content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.lightbox img {
-  max-width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  background: none;
-  border: none;
-  z-index: 1000;
-}
-
-.lightbox-close:hover {
-  color: #ccc;
-}
-
-.lightbox-nav {
-  position: absolute;
-  top: 50%;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border: none;
-  transition: background 0.3s;
-  z-index: 1000;
-}
-
-.lightbox-nav:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.lightbox-prev {
-  left: 20px;
-}
-
-.lightbox-next {
-  right: 20px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* RESPONSIVE - Menos columnas en pantallas pequeñas */
-@media (max-width: 1200px) {
-  .galeria {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 768px) {
-  .galeria {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 480px) {
-  .galeria {
-    column-count: 1;
-  }
-}
