@@ -71,9 +71,11 @@ main {
 }
 
 .pie-index h1 {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.6rem;   /* 🔥 agrandado con proporción visual */
+  font-weight: bold;   /* mantiene presencia sin distorsionar */
+  margin-bottom: 2px;  /* reduce espacio con las líneas siguientes */
 }
+
 
 .pie-index p {
   font-size: 1.1rem;   /* ← más grande, igual que Manifiesto */
