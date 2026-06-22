@@ -35,17 +35,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
   padding: 1in;
-  height: calc(100vh - 200px);
   overflow: hidden;
-  margin: 20px 0;
+  background-color: #fdfdfd;
 }
 
 .portada img {
-  width: auto;
+  width: 100%;
   height: 100%;
   object-fit: contain;
-  max-width: 100%;
 }
 
 /* GALERÍA MASONRY - DESORDENADA PERO ORGANIZADA */
