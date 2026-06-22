@@ -60,8 +60,23 @@ main {
   color: #111;
 }
 
-/* 🔥 PIE DE PÁGINA ABAJO IZQUIERDA */
+//* 🔥 PIE DE PÁGINA ABAJO IZQUIERDA — AJUSTADO */
 .pie-index {
   position: absolute;
-  bottom: 20px;
+  bottom: 5px;      /* ← antes 20px: sube el texto hacia la imagen */
   left: 20px;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  color: #111;
+}
+
+.pie-index h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.pie-index p {
+  font-size: 1.1rem;   /* ← más grande, igual que Manifiesto */
+  margin: 0;           /* ← elimina espacio vertical */
+  line-height: 1.2;    /* ← más compacto */
+}
