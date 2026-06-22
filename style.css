@@ -33,21 +33,31 @@ main {
 
 .portada {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  height: 80vh;      /* ← ajustable */
+  height: 85vh;
   width: 100%;
+  padding: 0;
   margin: 0 auto;
-  padding: 0;        /* ← elimina el marco gigante */
-  position: relative; /* ← permite que el texto quede arriba como en Manifiesto */
   overflow: hidden;
 }
 
 .portada img {
-  height: 100%;
+  height: 70vh;
   width: auto;
   object-fit: contain;
 }
+
+.descripcion-izq {
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
 
 /* GALERÍA MASONRY - DESORDENADA PERO ORGANIZADA */
 .galeria {
