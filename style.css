@@ -30,20 +30,20 @@ main {
   margin: auto;
   text-align: center;
 }
+
 .portada {
-    display: flex;
-    justify-content: flex-start; /* mantiene la imagen a la izquierda */
-    align-items: center;         /* centrada verticalmente */
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1in;
+  height: calc(100vh - 200px);
+  overflow: hidden;
+  margin: 20px 0;
 }
 
 .portada img {
-    width: auto;
-    height: 60vh; /* ← agranda la imagen un poquito */
-    object-fit: cover;
-}
-
-.portada img {
-    max-width: 90%;
-    height: auto;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
 }
