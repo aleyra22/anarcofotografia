@@ -34,28 +34,28 @@ main {
 .portada {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 85vh;
+  justify-content: space-between; /* ← imagen arriba, texto abajo */
+  align-items: flex-start;        /* ← alinear a la izquierda */
+  height: 85vh;                   /* ajustable */
   width: 100%;
-  padding: 0;
+  padding: 0 20px;                /* margen lateral suave */
   margin: 0 auto;
   overflow: hidden;
 }
+
 
 .portada img {
   height: 70vh;
   width: auto;
   object-fit: contain;
+  align-self: center; /* ← centrada arriba */
 }
 
 .descripcion-izq {
-  align-self: flex-start;
-  margin-left: 20px;
-  margin-top: 10px;
   font-size: 0.9rem;
   max-width: 600px;
   line-height: 1.4;
+  margin-bottom: 10px; /* ← queda abajo */
 }
 
 
