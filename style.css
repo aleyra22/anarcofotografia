@@ -35,14 +35,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 1in;
+  height: 80vh;      /* ← ajustable */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;        /* ← elimina el marco gigante */
+  position: relative; /* ← permite que el texto quede arriba como en Manifiesto */
   overflow: hidden;
-  background-color: #fdfdfd;
 }
 
 .portada img {
