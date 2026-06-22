@@ -50,12 +50,39 @@ main {
   object-fit: contain;
   align-self: center; /* ← centrada arriba */
 }
+.texto-arriba {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #111;
+}
+
 
 .descripcion-izq {
   font-size: 0.9rem;
   max-width: 600px;
   line-height: 1.4;
   margin-bottom: 10px; /* ← queda abajo */
+}
+.pie-index {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  color: #111;
+}
+
+.pie-index h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.pie-index p {
+  font-size: 0.9rem;
+  margin: 2px 0;
 }
 
 
