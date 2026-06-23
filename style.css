@@ -106,3 +106,47 @@ main {
   margin: 0;           /* ← elimina espacio vertical */
   line-height: 1.2;    /* ← más compacto */
 }
+/* GALERÍA MASONRY - DESORDENADA PERO ORGANIZADA */
+.galeria {
+  column-count: 4;
+  column-gap: 20px;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+.galeria-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-item img {
+  width: 100%;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.galeria-item:hover img {
+  filter: brightness(0.9);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .galeria {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    column-count: 2;
+  }
+}
