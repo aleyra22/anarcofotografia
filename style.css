@@ -59,6 +59,29 @@ main {
   font-size: 1.1rem;
   color: #111;
 }
+.contenedor-valvula {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* mueve la imagen hacia la derecha */
+  margin-top: 40px;
+}
+
+.imagen-valvula {
+  max-width: 60%;
+  height: auto;
+}
+
+.pie-valvula {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-align: left;
+  font-family: 'Courier New', monospace; /* igual que la frase */
+  font-size: 1rem; /* mismo tamaño */
+  color: #111;
+  line-height: 1.2;
+}
+
 
 //* 🔥 PIE DE PÁGINA ABAJO IZQUIERDA — AJUSTADO */
 .pie-index {
